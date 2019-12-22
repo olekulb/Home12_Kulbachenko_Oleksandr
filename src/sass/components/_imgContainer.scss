@@ -1,0 +1,16 @@
+.pict-container {
+  display: flex;
+  background-color: #EDEFF0;
+  width: 182px;
+  height: 182px;
+  border-radius: 100%;
+  margin: 0 auto;
+
+  & img {
+    margin: auto;
+  }
+
+  &:hover {
+    background-color: $main-color;
+  }
+}

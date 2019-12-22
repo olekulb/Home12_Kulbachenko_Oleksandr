@@ -1,0 +1,9 @@
+.footer-wrapper {
+  background-image: url("../img/footerBackground.jpg");
+  @extend .bg-position;
+  min-height: 20vw;
+
+  & .row {
+    padding-top: 100px;
+  }
+}

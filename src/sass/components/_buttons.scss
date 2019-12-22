@@ -1,0 +1,71 @@
+.main-button {
+  background-color: $main-color;
+  width: 183px;
+  height: 47px;
+  border-radius: 24px;
+  border: 0 solid transparent;
+  opacity: 0.5;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 70px auto 100px auto;
+
+  &:hover {
+    opacity: 1;
+    background-color: $main-color;
+    border: 0 solid transparent;
+  }
+}
+
+.header-button {
+  @extend .main-button;
+  margin: 10px auto 50px auto;
+  display: inline-block;
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid $bg-image-color;
+}
+
+.down-wrapper {
+  height: 15px;
+  width: 28px;
+  font-size: 40px;
+  color: $bg-image-color;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.down-button {
+  height: 28px;
+  width: 15px;
+  transform: rotate(90deg);
+  text-align: center;
+  opacity: 0.5;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.down-button-content {
+  display: block;
+  height: 100%;
+}
+
+.btn-margin {
+  margin-bottom: 100px;
+}
+
+.purchase-button {
+  height: 70px;
+  background-color: $main-color;
+  color: $bg-image-color;
+  opacity: 0.5;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}

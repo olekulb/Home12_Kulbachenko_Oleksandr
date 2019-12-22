@@ -1,0 +1,17 @@
+.carousel {
+  margin-top: 100px;
+}
+
+.carousel-inner {
+  min-height: 280px;
+  overflow: visible;
+  @media (min-width: 768px) {
+    min-height: 150px;
+  }
+}
+
+.carousel-caption {
+  color: $bg-image-color;
+  top: 50%;
+}
+

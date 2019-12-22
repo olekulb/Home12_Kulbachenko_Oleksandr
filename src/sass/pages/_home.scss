@@ -1,0 +1,109 @@
+.options-wrapper {
+  background-image: url("../img/optionsBackground.jpg");
+  @extend .bg-position;
+}
+
+.options {
+  color: $bg-image-color;
+  font-family: $second-font;
+  font-weight: $second-font-weight;
+  line-height: $main-line-height;
+
+  & h2 {
+    font-size: $small-header-size;
+
+    & span {
+      color: $main-color;
+    }
+  }
+
+  & p {
+    font-size: $main-font-size;
+  }
+}
+
+.sides {
+  font-size: $big-header-size;
+}
+
+.darker {
+  background-color: #E4E4E4;
+
+  & h3 a {
+    color: #E4E4E4;
+  }
+}
+
+.lighter {
+  @extend .light-bg;
+
+  & h3 a {
+    color: $light-background;
+  }
+}
+
+.middle-bg {
+  background-color: #EFEFEF;
+
+  & h3 a {
+    color: #EFEFEF;
+  }
+}
+
+.member {
+  text-align: center;
+
+  & h3 {
+    height: 0;
+    overflow: visible;
+    padding: 50% 0;
+  }
+
+  &:hover {
+    background-color: $main-color;
+    color: $bg-image-color;
+    cursor: pointer;
+  }
+}
+
+.good {
+  border-radius: 5px;
+  border: 15px solid $light-background;
+  //  margin: 15px;
+}
+
+.good-price {
+  background-color: $bg-image-color;
+
+  & h3 {
+    color: $main-color;
+  }
+}
+
+.good-description {
+  background-color: $bg-image-color;
+  border-top: 3px solid $light-background;
+
+  & p {
+    padding-top: 50px;
+  }
+}
+
+.template {
+  background-image: url("../img/template.jpg");
+  @extend .bg-position;
+
+  & h2 {
+    font-size: $small-header-size;
+    color: $second-color;
+    font-family: $header-font;
+    font-weight: 100;
+    line-height: $main-line-height;
+
+    & span {
+      font-weight: 900;
+      font-family: $second-font;
+      color: $bg-image-color;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.bullets {
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid $bg-image-color;
+  border-radius: 100%;
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $bg-image-color;
+    cursor: pointer;
+  }
+}

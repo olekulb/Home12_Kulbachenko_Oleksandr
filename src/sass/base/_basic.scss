@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.content-item {
+  @include text-item;
+}
+
+.text-content {
+  @include text-content;
+}
+
+.light-bg {
+  background-color: $light-background;
+}
+
+.invisible-title {
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+.header-top-padding {
+  padding-top: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: $bg-image-color;
+
+  &:hover {
+    cursor: pointer;
+    color: $bg-image-color;
+    text-decoration: none;
+  }
+}
+
+.bg-position {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
