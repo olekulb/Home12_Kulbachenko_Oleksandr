@@ -16,7 +16,6 @@
 }
 
 @mixin text-content {
-  text-align: center;
   & h2, & h3 {
     color: $header-color;
     font-family: $header-font;

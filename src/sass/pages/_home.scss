@@ -1,3 +1,7 @@
+.navbar-toggler:hover {
+  cursor: pointer;
+}
+
 .options-wrapper {
   background-image: url("../img/optionsBackground.jpg");
   @extend .bg-position;
@@ -26,50 +30,55 @@
   font-size: $big-header-size;
 }
 
-.darker {
-  background-color: #E4E4E4;
-
-  & h3 a {
-    color: #E4E4E4;
-  }
+.icon-ring {
+  width: 94px;
+  height: 94px;
+  border-radius: 100%;
+  background-color: $bg-image-color;
+  text-align: center;
 }
 
-.lighter {
-  @extend .light-bg;
-
-  & h3 a {
-    color: $light-background;
-  }
+.service-description {
+  word-wrap: break-word;
 }
 
-.middle-bg {
-  background-color: #EFEFEF;
-
-  & h3 a {
-    color: #EFEFEF;
-  }
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 50px 0;
+  box-sizing: border-box;
 }
 
 .member {
-  text-align: center;
+  position: relative;
+  display: flex;
+}
 
-  & h3 {
-    height: 0;
-    overflow: visible;
-    padding: 50% 0;
-  }
+.member-name {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: $bg-image-color;
+  opacity: 0;
 
   &:hover {
+    opacity: 1;
     background-color: $main-color;
-    color: $bg-image-color;
     cursor: pointer;
+  }
+
+  & h3 {
+    align-items: center;
+    position: static;
+    padding-top: 90px;
   }
 }
 
 .good {
   border-radius: 5px;
   border: 15px solid $light-background;
-  //  margin: 15px;
 }
 
 .good-price {
@@ -106,4 +115,12 @@
       color: $bg-image-color;
     }
   }
+}
+
+.small-logo-wrapper {
+  color: $second-color;
+}
+
+.small-logo {
+  padding-right: 15px;
 }

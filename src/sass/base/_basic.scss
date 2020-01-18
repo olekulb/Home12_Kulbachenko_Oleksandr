@@ -13,6 +13,11 @@
   @include text-content;
 }
 
+.text-center {
+  text-align: center;
+}
+
+
 .light-bg {
   background-color: $light-background;
 }
